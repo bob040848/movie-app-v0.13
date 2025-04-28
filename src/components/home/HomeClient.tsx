@@ -13,7 +13,7 @@ export const HomeClient = () => {
   const { movies: upcoming, isLoading: upcomingLoading, error: upcomingError } = useMovies('upcoming');
   const { query, setQuery, movies: searchResults } = useSearch();
 
-  // Debug logs to check data fetching
+  
   console.log('Now Playing:', { nowPlaying, nowPlayingLoading, nowPlayingError });
   console.log('Popular:', { popular, popularLoading, popularError });
   console.log('Top Rated:', { topRated, topRatedLoading, topRatedError });
